@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="03" author="pavel">
+        <insert tableName="students">
+            <column name="name" value="Marx"/>
+        </insert>
+        <insert tableName="students">
+            <column name="name" value="Engels"/>
+        </insert>
+        <insert tableName="students">
+            <column name="name" value="John"/>
+        </insert>
+        <insert tableName="students">
+            <column name="name" value="Nick"/>
+        </insert>
+        <insert tableName="students">
+            <column name="name" value="Bill"/>
+        </insert>
+        <insert tableName="students">
+            <column name="name" value="Alice"/>
+        </insert>
+        <insert tableName="students">
+            <column name="name" value="Bob"/>
+        </insert>
+        <insert tableName="students">
+            <column name="name" value="Vita"/>
+        </insert>
+
+        <insert tableName="courses">
+            <column name="name" value="Math"/>
+        </insert>
+        <insert tableName="courses">
+            <column name="name" value="Physics"/>
+        </insert>
+        <insert tableName="courses">
+            <column name="name" value="Chemistry"/>
+        </insert>
+        <insert tableName="courses">
+            <column name="name" value="History"/>
+        </insert>
+        <insert tableName="courses">
+            <column name="name" value="Biology"/>
+        </insert>
+        <insert tableName="courses">
+            <column name="name" value="Culturology"/>
+        </insert>
+
+        <insert tableName="registration">
+            <column name="student_id" valueNumeric="1"/>
+            <column name="course_id" valueNumeric="1"/>
+        </insert>
+        <insert tableName="registration">
+            <column name="student_id" valueNumeric="1"/>
+            <column name="course_id" valueNumeric="2"/>
+        </insert>
+        <insert tableName="registration">
+            <column name="student_id" valueNumeric="1"/>
+            <column name="course_id" valueNumeric="4"/>
+        </insert>
+        <insert tableName="registration">
+            <column name="student_id" valueNumeric="1"/>
+            <column name="course_id" valueNumeric="5"/>
+        </insert>
+        <insert tableName="registration">
+            <column name="student_id" valueNumeric="1"/>
+            <column name="course_id" valueNumeric="6"/>
+        </insert>
+        <insert tableName="registration">
+            <column name="student_id" valueNumeric="2"/>
+            <column name="course_id" valueNumeric="2"/>
+        </insert>
+        <insert tableName="registration">
+            <column name="student_id" valueNumeric="2"/>
+            <column name="course_id" valueNumeric="5"/>
+        </insert>
+        <insert tableName="registration">
+            <column name="student_id" valueNumeric="2"/>
+            <column name="course_id" valueNumeric="6"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
